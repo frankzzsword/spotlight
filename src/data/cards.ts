@@ -1,0 +1,128 @@
+export interface SpotCard {
+  id: string;
+  text: string;
+  type: 'spot';
+}
+
+export interface ChallengeCard {
+  id: string;
+  text: string;
+  type: 'challenge';
+}
+
+export type Card = SpotCard | ChallengeCard;
+
+// Spot cards data
+export const spotCards: SpotCard[] = [
+  { id: 'spot1', text: 'Someone tells the same story multiple times to different people.', type: 'spot' },
+  { id: 'spot2', text: 'Someone sits on a non-chair surface (e.g., counter, floor).', type: 'spot' },
+  { id: 'spot3', text: 'Someone mentions a trend.', type: 'spot' },
+  { id: 'spot4', text: 'Someone claims they "don\'t usually drink this much".', type: 'spot' },
+  { id: 'spot5', text: 'Someone smells/shakes a drink before sipping.', type: 'spot' },
+  { id: 'spot6', text: 'A phone flashlight is used for non-utility purposes.', type: 'spot' },
+  { id: 'spot7', text: 'Someone takes a group photo.', type: 'spot' },
+  { id: 'spot8', text: 'Someone mentions their ex.', type: 'spot' },
+  { id: 'spot9', text: 'Someone mentions the time.', type: 'spot' },
+  { id: 'spot10', text: 'Someone takes part of their clothing off.', type: 'spot' },
+  { id: 'spot11', text: 'Someone checks their phone while someone is talking to them.', type: 'spot' },
+  { id: 'spot12', text: 'Someone talking with their mouth full.', type: 'spot' },
+  { id: 'spot13', text: 'Someone using a paper towel.', type: 'spot' },
+  { id: 'spot14', text: 'Someone offering unsolicited advice.', type: 'spot' },
+  { id: 'spot15', text: 'Looking around the room like they\'re searching for someone specific.', type: 'spot' },
+  { id: 'spot16', text: 'Someone takes a selfie with the host.', type: 'spot' },
+  { id: 'spot17', text: 'Someone asks "What do you do?".', type: 'spot' },
+  { id: 'spot18', text: 'Someone asks "Where are you from?".', type: 'spot' },
+  { id: 'spot19', text: 'Someone tells a long story.', type: 'spot' },
+  { id: 'spot20', text: 'Someone who starts mentioning about their colleague.', type: 'spot' },
+  { id: 'spot21', text: 'Someone asks for a lighter.', type: 'spot' },
+  { id: 'spot22', text: 'Someone does a cheers.', type: 'spot' },
+  { id: 'spot23', text: 'Someone complains about the volume.', type: 'spot' },
+  { id: 'spot24', text: 'Someone complains about the music.', type: 'spot' },
+  { id: 'spot25', text: 'Someone talks about their job (in detail).', type: 'spot' },
+  { id: 'spot26', text: 'Someone talks about their "side hustle".', type: 'spot' },
+  { id: 'spot27', text: 'Someone complains about transportation.', type: 'spot' },
+  { id: 'spot28', text: 'Someone talks about their sleep schedule.', type: 'spot' },
+  { id: 'spot29', text: 'Someone mentions viral media.', type: 'spot' },
+  { id: 'spot30', text: 'Someone making a "dad joke".', type: 'spot' },
+  { id: 'spot31', text: 'Someone does something unexpected.', type: 'spot' },
+  { id: 'spot32', text: 'You and someone else are drinking the exact drink.', type: 'spot' },
+  { id: 'spot33', text: 'You and another person are wearing the same color.', type: 'spot' },
+  { id: 'spot34', text: 'You and another person were both stuck in an awkward silence together.', type: 'spot' },
+  { id: 'spot35', text: 'Someone has spilled a drink at some point in the party.', type: 'spot' },
+  { id: 'spot36', text: 'You and another person laughed at something that wasn\'t supposed to be dirty, but your minds made it dirty.', type: 'spot' },
+  { id: 'spot37', text: 'Catch someone vaping indoors.', type: 'spot' },
+  { id: 'spot38', text: 'A person tries to change the music.', type: 'spot' },
+  { id: 'spot39', text: 'Whines about something trivial (temperature, music, etc.).', type: 'spot' },
+  { id: 'spot40', text: 'Suddenly needs to go outside for "fresh air."', type: 'spot' },
+  { id: 'spot41', text: 'Shows up late.', type: 'spot' },
+  { id: 'spot42', text: 'Constantly interrupts conversations.', type: 'spot' },
+  { id: 'spot43', text: 'Tells the same story multiple times to different people.', type: 'spot' },
+  { id: 'spot44', text: 'Hug strangers like old friends.', type: 'spot' },
+  { id: 'spot45', text: 'Overshare personal stories.', type: 'spot' },
+  { id: 'spot46', text: 'Lose shoes or accessories.', type: 'spot' },
+  { id: 'spot47', text: 'Talking louder than usual.', type: 'spot' },
+  { id: 'spot48', text: 'Being extra social.', type: 'spot' },
+  { id: 'spot49', text: 'Snacking hard.', type: 'spot' },
+  { id: 'spot50', text: 'Making big plans.', type: 'spot' },
+  { id: 'spot51', text: 'Repeatedly offer to get everyone drinks.', type: 'spot' },
+  { id: 'spot52', text: 'Trash-talk their job.', type: 'spot' },
+  { id: 'spot53', text: 'Someone is talking to another person\'s ears.', type: 'spot' },
+  { id: 'spot54', text: 'Someone is explaining the rules of another game.', type: 'spot' },
+  { id: 'spot55', text: 'A phone\'s flashlight is used for non-utility purposes.', type: 'spot' },
+  { id: 'spot56', text: 'Two guests get into a "heated" debate over something silly.', type: 'spot' },
+  { id: 'spot57', text: 'Someone who has been posting stories.', type: 'spot' },
+];
+
+// Challenge cards data
+export const challengeCards: ChallengeCard[] = [
+  { id: 'challenge1', text: 'Swap an item of clothing with the person to your left. Wear it for 10 mins.', type: 'challenge' },
+  { id: 'challenge2', text: 'Start a conga line that must include at least 10 people. Last to join drinks.', type: 'challenge' },
+  { id: 'challenge3', text: 'Speak in a Russian accent for the next 10 mins. Slip-up = a shots.', type: 'challenge' },
+  { id: 'challenge4', text: 'Let the group choose a temporary tattoo location. Apply it with Sharpie.', type: 'challenge' },
+  { id: 'challenge5', text: 'Pick a partner. Stare into their eyes without blinking. First to laugh drinks.', type: 'challenge' },
+  { id: 'challenge6', text: 'Teach the group a \'cultural dance\' from a country you\'ve never visited.', type: 'challenge' },
+  { id: 'challenge7', text: 'Wear your socks on your hands and talk to people as a sock puppet.', type: 'challenge' },
+  { id: 'challenge8', text: 'Propose to a stranger. If they say yes, they drink.', type: 'challenge' },
+  { id: 'challenge9', text: 'Trade drinks with the nearest person.', type: 'challenge' },
+  { id: 'challenge10', text: 'Do a viral dance trend.', type: 'challenge' },
+  { id: 'challenge11', text: '"Wheel of Misfortune" Spin a bottle; kiss, slap, or shot with where it lands.', type: 'challenge' },
+  { id: 'challenge12', text: 'Sob dramatically until someone hugs you. No hug = drink.', type: 'challenge' },
+  { id: 'challenge13', text: 'Challenge someone to a thumb war.', type: 'challenge' },
+  { id: 'challenge14', text: 'Challenge someone to a staring contest... and then immediately burst out laughing.', type: 'challenge' },
+  { id: 'challenge15', text: 'Teach someone a dance move you just invented.', type: 'challenge' },
+  { id: 'challenge16', text: 'Take a selfie with a stranger and make it your profile picture for the entire party.', type: 'challenge' },
+  { id: 'challenge17', text: 'Say "Peter Piper picked a pack of pickled peppers" five times fast.', type: 'challenge' },
+  { id: 'challenge18', text: 'Recite the alphabet backward without a pause.', type: 'challenge' },
+  { id: 'challenge19', text: 'Blindfolded identify 3 objects.', type: 'challenge' },
+  { id: 'challenge20', text: 'Tell your most embarrassing fetish. *Volume = sincerity.*', type: 'challenge' },
+  { id: 'challenge21', text: 'Sing a song using only fart noises.', type: 'challenge' },
+  { id: 'challenge22', text: 'Ask someone to zip/unzip your pants.', type: 'challenge' },
+  { id: 'challenge23', text: 'Let the group draw on your face something.', type: 'challenge' },
+  { id: 'challenge24', text: 'Pillow/Cushion fight with a stranger.', type: 'challenge' },
+  { id: 'challenge25', text: 'Twerk until someone joins you. Last person to join takes a shot.', type: 'challenge' },
+  { id: 'challenge26', text: 'Crawl to the next room. Anyone who laughs must crawl with you.', type: 'challenge' },
+  { id: 'challenge27', text: 'Be the party photographer.', type: 'challenge' },
+  { id: 'challenge28', text: 'Engage in a compliment battle with the spotted person, escalating until it gets absurd.', type: 'challenge' },
+  { id: 'challenge29', text: 'Hold hands with any one person for the next 5 minutes, no matter what.', type: 'challenge' },
+  { id: 'challenge30', text: 'Flip a coin. Heads = you kiss the spotted person on the cheek? Tails = they slap you on the butt (lightly?)', type: 'challenge' },
+  { id: 'challenge31', text: 'Eat something spicy or hold an ice cube in your hand for 30 seconds.', type: 'challenge' },
+  { id: 'challenge32', text: 'Stand on one leg for the next 2 minutes. If you fail, you drink.', type: 'challenge' },
+  { id: 'challenge33', text: 'For the next 3 minutes, everything the spotted person does, you must copy.', type: 'challenge' },
+  { id: 'challenge34', text: 'Get on a table or chair and make an over-the-top toast to the party.', type: 'challenge' },
+  { id: 'challenge35', text: '5 rounds of rock paper scissors, loser takes a shot.', type: 'challenge' },
+  { id: 'challenge36', text: 'Try to lick your elbow.', type: 'challenge' },
+  { id: 'challenge37', text: 'Stand guard the door and introduce the game in a hilarious accent to the guest for 5 minutes.', type: 'challenge' },
+  { id: 'challenge38', text: 'Freeze in a ridiculous pose for 20 seconds.', type: 'challenge' },
+  { id: 'challenge39', text: 'Make a bizarre cocktail with whatever ingredients are available (must be drinkable!).', type: 'challenge' },
+  { id: 'challenge40', text: 'Spend the next 5 minutes aggressively trying to explain the rules of the game to anyone who will listen, even if they already know. Emphasize how revolutionary and life-changing the game is, using increasingly hyperbolic language.', type: 'challenge' },
+  { id: 'challenge41', text: 'Successfully steal a Spot or Action card from another player without them noticing. (If caught, you must perform their Action instead).', type: 'challenge' },
+  { id: 'challenge42', text: 'Pretend to have lost a crucial Spot card, enlisting other players to help you "find" it.', type: 'challenge' },
+  { id: 'challenge43', text: 'For the next 10 minutes, you are the "Party Hype-Man/Woman." Your job is to enthusiastically (and obnoxiously) compliment everything everyone does, no matter how mundane.', type: 'challenge' },
+  { id: 'challenge44', text: 'High five 3 people who each must high five someone new.', type: 'challenge' },
+  { id: 'challenge45', text: 'Hug someone who must hug someone new (spreads for 30 seconds).', type: 'challenge' },
+  { id: 'challenge46', text: 'Toast with someone who must toast someone new (continues for 30 seconds).', type: 'challenge' },
+  { id: 'challenge47', text: 'Pick a category, fail to name something = drink.', type: 'challenge' },
+];
+
+// All cards combined
+export const allCards: Card[] = [...spotCards, ...challengeCards]; 
